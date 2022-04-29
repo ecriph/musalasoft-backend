@@ -3,12 +3,12 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config();
 
 mongoose.connect('mongodb://localhost/musalasoft');
 mongoose.Promise = global.Promise;
 
 
-// app.use(express.static('public'));
 
 app.use(bodyParser.json());
 
@@ -25,7 +25,7 @@ app.use((err,req,res,next)=>{
 })
 
 
-app.listen(process.env.port || 4000, function(){
+app.listen(process.env.PORT || 4000, function(){
 
     console.log('Listening to port request');
 })
