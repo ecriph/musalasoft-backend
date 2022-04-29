@@ -7,7 +7,7 @@ require('dotenv').config();
 
 mongoose.connect('mongodb+srv://ecriph:AloZie2014@musalasoft.vurji.mongodb.net/musalasoft?retryWrites=true&w=majority');
 mongoose.Promise = global.Promise;
-
+ 
 
 
 app.use(bodyParser.json());
