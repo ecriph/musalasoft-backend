@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
 
-mongoose.connect('mongodb://localhost/musalasoft');
+mongoose.connect('mongodb+srv://ecriph:AloZie2014@musalasoft.vurji.mongodb.net/musalasoft?retryWrites=true&w=majority');
 mongoose.Promise = global.Promise;
 
 
